@@ -1,91 +1,71 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Our Team - Stage Combat Workshop</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script>
-    // Function to toggle the mobile navigation menu
-    function toggleMobileMenu() {
-      document.getElementById('mobile-menu').classList.toggle('hidden');
-    }
-  </script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body class="bg-gray-100">
-  <header class="bg-white shadow">
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-16">
-        <div class="flex">
-          <div class="-ml-2 mr-2 flex items-center">
-            <img src="logo.png" alt="Logo" class="h-16 w-auto">
-          </div>
-          <!-- Desktop navigation -->
-          <div class="hidden sm:flex space-x-8">
-            <a href="index.html" class="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-            <a href="about.html" class="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">About</a>
-            <a href="#register" class="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Register</a>
-          </div>
-        </div>
-        <!-- Mobile menu button -->
-        <div class="sm:hidden">
-          <button onclick="toggleMobileMenu()" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
-            <span class="sr-only">Open main menu</span>
-            <!-- Icon for menu button -->
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          </button>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.png" alt="Logo" height="30">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link active" href="about.html">About <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#register">Register</a>
         </div>
       </div>
-      <!-- Mobile navigation -->
-      <div id="mobile-menu" class="sm:hidden hidden">
-        <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</a>
-        <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About</a>
-        <a href="#register" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Register</a>
-      </div>
-    </nav>
-  </header>
-    <main>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="text-center mb-16">
-          <h1 class="text-4xl font-bold text-gray-900">Meet Our Team</h1>
-          <p class="mt-4 text-lg text-gray-500">Our dedicated team of professional instructors and associates are here to guide you through your stage combat journey.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-          <!-- Placeholder for Teachers -->
-          <div class="bg-white rounded-lg shadow overflow-hidden">
-            <img src="https://www.shutterstock.com/image-photo/portrait-cool-young-woman-bubble-600nw-2366339323.jpg" alt="Teacher Photo" class="w-full h-96 object-cover">
-            <div class="px-4 py-5 sm:p-6">
-              <h3 class="text-lg leading-6 font-medium text-gray-900">Teacher Name</h3>
-              <p class="mt-1 max-w-2xl text-sm text-gray-500">Specialization or bio...</p>
-            </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <h1 class="mb-4">Meet Our Team</h1>
+    <p class="lead text-muted">Our dedicated team of professional instructors and associates are here to guide you through your stage combat journey.</p>
+    <div class="row">
+      <!-- Repeat this block for each team member -->
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="https://via.placeholder.com/350x350" alt="Team member" class="bd-placeholder-img card-img-top">
+          <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
           </div>
-          <!-- Repeat for each teacher -->
         </div>
-        <div class="text-center mb-8">
-          <h2 class="text-3xl font-bold text-gray-900">Associate Instructors</h2>
-          <p class="mt-2 text-lg text-gray-500">Our associates bring a wealth of knowledge and experience to our workshop.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-          <!-- Placeholder for Teachers -->
-          <div class="bg-white rounded-lg shadow overflow-hidden">
-            <img src="https://www.shutterstock.com/image-photo/portrait-cool-young-woman-bubble-600nw-2366339323.jpg" alt="Teacher Photo" class="w-full h-96 object-cover">
-            <div class="px-4 py-5 sm:p-6">
-              <h3 class="text-lg leading-6 font-medium text-gray-900">Teacher Name</h3>
-              <p class="mt-1 max-w-2xl text-sm text-gray-500">Specialization or bio...</p>
-            </div>
+      </div>
+      <!-- End of block -->
+    </div>
+
+    <h2 class="mt-5 mb-4">Associate Instructors</h2>
+    <div class="row">
+      <!-- Repeat this block for each associate instructor -->
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="https://via.placeholder.com/350x350" alt="Associate Instructor" class="bd-placeholder-img card-img-top">
+          <div class="card-body">
+            <p class="card-text">Brief bio of the associate instructor. Their experience, expertise, and contribution to the workshop.</p>
           </div>
-          <!-- Repeat for each teacher -->
         </div>
       </div>
-    </main>
-    <footer class="bg-white">
-      <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-        <p class="text-center text-base leading-6 text-gray-400">
-          &copy; 2024 Stage Combat Workshop. All rights reserved.
-        </p>
-      </div>
-    </footer>
-  </body>
-  </html>
+      <!-- End of block -->
+    </div>
+  </div>
+
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-right mb-1">
+        <a href="#">Back to top</a>
+      </p>
+      <p class="mb-1">&copy; 2024 Stage Combat Workshop. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

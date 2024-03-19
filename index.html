@@ -3,100 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Our Team - Stage Combat Workshop</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script>
-    // Function to toggle the mobile navigation menu
-    function toggleMobileMenu() {
-      document.getElementById('mobile-menu').classList.toggle('hidden');
-    }
-  </script>
+  <title>Stage Combat Workshop</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<body class="bg-gray-100">
-  <header class="bg-white shadow">
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between h-16">
-        <div class="flex">
-          <div class="-ml-2 mr-2 flex items-center">
-            <img src="logo.png" alt="Logo" class="h-16 w-auto">
-          </div>
-          <!-- Desktop navigation -->
-          <div class="hidden sm:flex space-x-8">
-            <a href="index.html" class="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-            <a href="about.html" class="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">About</a>
-            <a href="#register" class="text-gray-500 hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium">Register</a>
-          </div>
-        </div>
-        <!-- Mobile menu button -->
-        <div class="sm:hidden">
-          <button onclick="toggleMobileMenu()" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
-            <span class="sr-only">Open main menu</span>
-            <!-- Icon for menu button -->
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          </button>
-        </div>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.png" alt="Logo" height="30">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#register">Register</a>
+          </li>
+        </ul>
       </div>
-      <!-- Mobile navigation -->
-      <div id="mobile-menu" class="sm:hidden hidden">
-        <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</a>
-        <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About</a>
-        <a href="#register" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Register</a>
-      </div>
-    </nav>
+    </div>
+  </nav>
+
+  <header class="py-5 bg-image-full" style="background-image: url('https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-6/399057689_10163039823034186_3774784949412367730_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JLBda62ZJ0QAX8aN-iz&_nc_ht=scontent-hou1-1.xx&oh=00_AfBPS3R3YGlL6038pqUSI8iAzn_NGt5Ze9X18ZvoKWw9yg&oe=65FDBCC5'); height: 400px; background-size: cover; background-position: center;">
   </header>
-  <main>
-    <div class="mt-10">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Stage Combat Workshop
-          </h2>
-          <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-            Master the art of stage combat and choreographed fight scenes with our expert-led workshop.
-          </p>
-        </div>
-      </div>
-      <div class="mt-10 flex justify-center">
-        <img src="https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-6/399057689_10163039823034186_3774784949412367730_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JLBda62ZJ0QAX8aN-iz&_nc_ht=scontent-hou1-1.xx&oh=00_AfBPS3R3YGlL6038pqUSI8iAzn_NGt5Ze9X18ZvoKWw9yg&oe=65FDBCC5" alt="Stage Combat" class="rounded-lg w-auto max-h-96">
+
+  <div class="container mt-5">
+    <div class="text-center">
+      <h1 class="font-weight-light">Stage Combat Workshop</h1>
+      <p class="lead">Master the art of stage combat and choreographed fight scenes with our expert-led workshop.</p>
+    </div>
+  </div>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="font-weight-light text-center">About the Workshop</h2>
+      <p>This workshop provides a comprehensive introduction to stage combat, covering various techniques and safety protocols to ensure performances are both convincing and safe.</p>
+    </div>
+  </section>
+
+  <section id="register" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="font-weight-light text-center">Register Now</h2>
+      <p>Secure your spot in our next stage combat workshop and take the first step towards mastering the art of theatrical combat.</p>
+      <div class="text-center">
+        <a href="https://example.com/register" class="btn btn-primary">Register</a>
       </div>
     </div>
-    <div class="py-12 bg-white" id="about">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="lg:text-center">
-          <h3 class="text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl sm:leading-9">
-            About the Workshop
-          </h3>
-          <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
-            This workshop provides a comprehensive introduction to stage combat, covering various techniques and safety protocols to ensure performances are both convincing and safe.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="py-12 bg-blue-100" id="register">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="lg:text-center">
-          <h3 class="text-2xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl sm:leading-9">
-            Register Now
-          </h3>
-          <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
-            Secure your spot in our next stage combat workshop and take the first step towards mastering the art of theatrical combat.
-          </p>
-          <div class="mt-8 flex justify-center">
-            <a href="https://example.com/register" class="w-full max-w-xs flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue transition duration-150 ease-in-out">
-              Register
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer class="bg-white">
-    <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-      <p class="text-center text-base leading-6 text-gray-400">
-        &copy; 2024 Stage Combat Workshop. All rights reserved.
-      </p>
+  </section>
+
+  <footer class="py-5 bg-light">
+    <div class="container text-center">
+      <p class="m-0">&copy; 2024 Stage Combat Workshop. All rights reserved.</p>
     </div>
   </footer>
 </body>
