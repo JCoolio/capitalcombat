@@ -8,11 +8,20 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.6/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    .bg-image-full {
+      background-color: #cccccc; /* Used if the image is unavailable */
+      height: 400px; /* You must set a specified height */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+    }
+  </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><!---hi test-->
+      <a class="navbar-brand" href="index.html">
         <img src="logo.png" alt="Logo" height="100">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,9 +30,9 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="classes.html">Classes</a>
           </li>
           <li class="nav-item">
@@ -37,8 +46,7 @@
     </div>
   </nav>
 
-  <header class="py-5 bg-image-full" style="background-image: url('https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-6/399057689_10163039823034186_3774784949412367730_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JLBda62ZJ0QAX8aN-iz&_nc_ht=scontent-hou1-1.xx&oh=00_AfBPS3R3YGlL6038pqUSI8iAzn_NGt5Ze9X18ZvoKWw9yg&oe=65FDBCC5'); height: 400px; background-size: cover; background-position: center;">
-  </header>
+  <header class="bg-image-full" style="background-image: url('https://scontent-hou1-1.xx.fbcdn.net/v/t39.30808-6/399057689_10163039823034186_3774784949412367730_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JLBda62ZJ0QAX8aN-iz&_nc_ht=scontent-hou1-1.xx&oh=00_AfBPS3R3YGlL6038pqUSI8iAzn_NGt5Ze9X18ZvoKWw9yg&oe=65FDBCC5');"></header>
 
   <div class="container mt-5">
     <div class="text-center">
@@ -47,24 +55,24 @@
     </div>
   </div>
 
-  <section id="about" class="py-5">
+  <section id="about" class="py-5 text-white bg-dark">
     <div class="container">
       <h2 class="font-weight-light text-center">About the Workshop</h2>
       <p>This workshop provides a comprehensive introduction to stage combat, covering various techniques and safety protocols to ensure performances are both convincing and safe.</p>
     </div>
   </section>
 
-  <section id="register" class="py-5 bg-light">
+  <section id="register" class="py-5 bg-primary text-white">
     <div class="container">
       <h2 class="font-weight-light text-center">Register Now</h2>
       <p>Secure your spot in our next stage combat workshop and take the first step towards mastering the art of theatrical combat.</p>
       <div class="text-center">
-        <a href="https://example.com/register" class="btn btn-primary">Register</a>
+        <a href="https://example.com/register" class="btn btn-light">Register</a>
       </div>
     </div>
   </section>
 
-  <footer class="py-5 bg-light">
+  <footer class="py-5 bg-dark text-white">
     <div class="container text-center">
       <p class="m-0">&copy; 2024 Stage Combat Workshop. All rights reserved.</p>
     </div>
