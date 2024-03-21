@@ -1,0 +1,8 @@
+.bg-image-full {
+    /* Existing styles */
+    background-color: #cccccc; /* Fallback color */
+    height: 400px; /* Adjust this value based on your design needs */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Covers the entire area of the container, might crop the image */
+  }
